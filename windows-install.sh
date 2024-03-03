@@ -63,7 +63,9 @@ EOF
 cd /root/windisk
 mkdir winfile
 
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F" -O win10.iso && rm -rf /tmp/cookies.txt
+# wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1mFQ0KZAz2h_DFUlgYNWmfkcOD_mLjB4F" -O win10.iso && rm -rf /tmp/cookies.txt
+wget --no-check-certificate 'https://www.dropbox.com/scl/fi/ktskfphg0jx9u41mt5zuw/WIN10.PRO.21H1-21H2.SUPERLITE-COMPACT.U6.X64.-WPE.ISO?rlkey=zqhdj56qt1tq8i478ufa5rx2n&dl=1' -O win10.iso
+
 
 mount -o loop win10.iso winfile
 
