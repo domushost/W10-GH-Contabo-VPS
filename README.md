@@ -65,8 +65,6 @@ This guide provides step-by-step instructions for installing Windows 10 on a Con
   ![text](https://i.ibb.co/X7swb6C/custom-install.png)
 
 - For the installation, select the partition `Drive 0 Partition 1`
-  
-  ![text](https://i.ibb.co/mSq9KjR/select-partition.png)
 
 - Choose the operating system and then click on "Next"
   
